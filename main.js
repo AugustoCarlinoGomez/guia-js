@@ -23,11 +23,12 @@ const mensaje = document.getElementById("mensaje");
 
 boton.addEventListener("click", function () {
  const valor = input.value;
-
- const numero = Number(valor);   // convertir a número
- const resultado = numero + 10;  // sumar 10
-
- mensaje.textContent = resultado; // mostrar en pantalla
+// convertir a número
+ const numero = Number(valor);  
+// sumar 10
+ const resultado = numero + 10;  
+// mostrar en pantalla
+ mensaje.textContent = resultado; 
 });
 
 // punto 4
@@ -88,13 +89,10 @@ console.log(puntajetotal2);
 
 // punto 9
 const inventario = ["espada", "poción", "llave", "escudo", "mapa"];
-
 // Primer objeto
 console.log(inventario[0]);
-
 // Último objeto
 console.log(inventario[inventario.length - 1]);
-
 // Cantidad total de objetos
 console.log(inventario.length);
 
@@ -107,15 +105,12 @@ for (let i = 0; i < inventario.length; i++) {
 
 // punto 11
 let mochila = [];
-
 // Agregar objetos
 mochila.push("linterna");
 mochila.push("comida");
 mochila.push("mapa");
-
 // Quitar el último
 mochila.pop();
-
 // Mostrar resultado final
 console.log(mochila);
 
@@ -156,7 +151,6 @@ const jugador = {
   nivel: 1,
   inventario: ["espada", "poción"]
 };
-
 // Mostrar propiedades
 console.log(jugador.nombre);
 console.log(jugador.vida);
@@ -170,11 +164,9 @@ const jugador = {
   nivel: 1,
   monedas: 0
 };
-
 // Modificar propiedades
 jugador.nivel += 1;
 jugador.monedas += 50;
-
 // Mostrar resultado
 console.log(jugador);
 
@@ -246,7 +238,6 @@ console.log(vidaTotal);
 const mensaje = document.getElementById("mensaje");
 
 mensaje.textContent = "Bienvenido a la guía de JavaScript";
-
 // Cambiar color del texto
 mensaje.style.color = "blue";
 
@@ -281,12 +272,9 @@ const jugador = {
   nombre: "Luna",
   puntaje: 1500
 };
-
 // Guardar en localStorage
 localStorage.setItem("jugador", JSON.stringify(jugador));
-
 // Recuperar desde localStorage
 const jugadorGuardado = JSON.parse(localStorage.getItem("jugador"));
-
 // Mostrar por consola
 console.log(jugadorGuardado);

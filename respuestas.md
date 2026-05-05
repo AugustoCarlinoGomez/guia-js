@@ -8,6 +8,7 @@ Usaría const cuando el valor no va a cambiar después de ser asignado, por ejem
 ¿Por qué actualmente se recomienda evitar var?
 Se recomienda evitar var porque no respeta el alcance de bloque y puede generar errores, por ejemplo en un for como for (var i = 0; i < 3; i++) {} donde la variable i sigue existiendo fuera del bloque, lo que puede provocar comportamientos inesperados en el código.
 
+
 Punto 28
 ¿Qué significa que una variable tenga “scope” o alcance?
 El scope es el alcance de una variable, es decir, en qué partes del código puede ser utilizada; por ejemplo, una variable declarada dentro de una función como let nombre = "Local" solo existe dentro de esa función, mientras que una variable global como let nombre = "Global" se puede usar fuera de ella.
@@ -21,6 +22,7 @@ Después se muestra "Global", porque el console.log(nombre) que está fuera de l
 ¿Por qué?
 Porque cada variable tiene un alcance distinto, y cuando hay dos variables con el mismo nombre, como let nombre = "Local" dentro de la función y let nombre = "Global" fuera, JavaScript utiliza la variable más cercana en ese contexto, por lo que dentro de la función usa la local y fuera usa la global.
 
+
 Punto 29
 ¿Cuándo conviene usar un array y cuándo conviene usar un objeto?
 Conviene usar un array cuando queremos guardar una lista de elementos similares, por ejemplo const inventario = ["espada", "poción", "llave"], donde cada elemento es un objeto del jugador y el orden puede ser importante.
@@ -29,6 +31,7 @@ En cambio, conviene usar un objeto cuando queremos representar una entidad con v
 
 ¿Qué representa cada estructura?
 El array inventario representa una colección de objetos que el jugador posee, mientras que el objeto jugador representa al personaje en sí, con sus atributos como nombre, vida y nivel.
+
 
 Punto30
 ¿Qué es un evento en JavaScript?
